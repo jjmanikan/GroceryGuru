@@ -25,15 +25,16 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_margin="10dp"
         android:text="CheckBox"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.94" />
+        app:layout_constraintTop_toBottomOf="@id/listView" />
+
+    <Button
+        android:id="@+id/_btnAdd"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Add to list"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@id/listView"
+        app:layout_constraintLeft_toRightOf="@id/checkBox"/>
 </android.support.constraint.ConstraintLayout>

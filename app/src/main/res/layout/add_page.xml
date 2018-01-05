@@ -23,13 +23,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/_btnAdd"
+            android:id="@+id/_btnAddEntry"
             android:text="Add List"/>
         <Button
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="150dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/_btnViewLists"
