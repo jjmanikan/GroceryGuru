@@ -16,10 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddList"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ViewListItem"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AddList" />
+        <activity android:name=".ViewListItem" />
+        <activity android:name=".IndividualItem" />
     </application>
 
 </manifest>

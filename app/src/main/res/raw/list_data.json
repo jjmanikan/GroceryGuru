@@ -1,0 +1,19 @@
+{
+  "list-data": {
+    "groceries": [
+      {"item-one": "Milk"},
+      {"item-two": "Bread"},
+      {"item-three": "Eggs"}
+    ],
+    "clothes": [
+      {"item-one": "TShirt"},
+      {"item-two": "Sweater"},
+      {"item-three": "Jeans"}
+    ],
+    "electronics": [
+      {"item-one": "Laptop"},
+      {"item-two": "Tv"},
+      {"item-three": "Phone"}
+    ]
+  }
+}

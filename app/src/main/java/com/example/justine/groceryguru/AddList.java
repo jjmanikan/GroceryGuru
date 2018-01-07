@@ -15,21 +15,10 @@ import android.widget.EditText;
 
 public class AddList extends Activity {
 
-    /*private SQLiteDatabase database;
-    private SQLiteOpenHelper openHelper;
-
-    private static final String DB_NAME="lists.db";
-    private static final int DB_VERSION = 1;
-
-    private static final String LISTS_TABLE = "Lists";
-
-    private static final String  = "_id";
-    private static final int ID_COLUMN = 0;*/
+    DatabaseHelper database;
 
     EditText listname;
     Button addEntry;
-    Button previous;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -38,16 +27,17 @@ public class AddList extends Activity {
 
         listname = findViewById(R.id._txtName);
         addEntry = findViewById(R.id._btnAddEntry);
-        previous = findViewById(R.id._btnViewLists);
+
+        database = new DatabaseHelper(this);
 
         addEntry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = listname.getText().toString();
-                Intent data = new Intent();
-                data.putExtra("title", name);
-                setResult(Activity.RESULT_OK, data);
-                finish();
+                if (listname != null) {
+                    database.addTitle(listname.getText().toString());
+                    Intent returnIntent = new Intent(AddList.this, MainActivity.class);
+                    startActivity(returnIntent);
+                }
             }
         });
 
